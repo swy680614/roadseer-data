@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>路先知 RoadSeer 安裝</title>
+<style>
+  :root { --accent:#C1650A; --ink:#1a1a1a; --muted:#6b6b6b; --bg:#f5f3ef; --card:#fff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Noto Sans TC",system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:460px; margin:0 auto; padding:32px 20px 48px; text-align:center; }
+  .logo { font-size:30px; font-weight:800; letter-spacing:1px; }
+  .sub { color:var(--muted); margin-top:4px; }
+  .ver { display:inline-block; margin-top:10px; padding:3px 12px; border-radius:999px; background:var(--accent); color:#fff; font-size:14px; font-weight:600; }
+  .card { background:var(--card); border-radius:18px; padding:26px 22px; margin-top:24px; box-shadow:0 6px 24px rgba(0,0,0,.06); }
+  .qr { width:220px; height:220px; image-rendering:pixelated; border-radius:12px; }
+  .qrhint { color:var(--muted); font-size:14px; margin-top:8px; }
+  .btn { display:block; margin-top:20px; padding:16px; border-radius:14px; background:var(--accent); color:#fff; font-size:19px; font-weight:700; text-decoration:none; }
+  .btn:active { opacity:.85; }
+  .steps { text-align:left; margin-top:26px; background:var(--card); border-radius:14px; padding:20px 22px; box-shadow:0 6px 24px rgba(0,0,0,.06); }
+  .steps h3 { margin:0 0 10px; font-size:16px; }
+  .steps ol { margin:0; padding-left:20px; color:#333; }
+  .steps li { margin-bottom:8px; }
+  .foot { color:var(--muted); font-size:13px; margin-top:24px; }
+  .warn { font-size:13px; color:#a15; margin-top:6px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">路先知 RoadSeer</div>
+    <div class="sub">測速預警 · Android 安裝</div>
+    <div class="ver">v0.1.18-beta</div>
+
+    <div class="card">
+      <img class="qr" alt="掃碼下載" src="data:image/png;base64,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">
+      <div class="qrhint">手機相機掃描 QR 直接下載</div>
+      <a class="btn" href="RoadSeer.apk">⬇ 直接下載 APK</a>
+    </div>
+
+    <div class="steps">
+      <h3>安裝步驟</h3>
+      <ol>
+        <li>用手機掃上方 QR,或點「直接下載 APK」。</li>
+        <li>下載完成後點開檔案。</li>
+        <li>若跳出「不允許安裝未知來源」,點<b>設定 → 允許此來源</b>再回來安裝。</li>
+        <li>安裝後開啟,允許<b>定位</b>與<b>顯示在其他應用程式上層</b>權限。</li>
+      </ol>
+      <div class="warn">⚠ 僅供 Android · beta 測試版</div>
+    </div>
+
+    <div class="foot">資料每週自動更新（全台固定式 + 區間測速）</div>
+  </div>
+</body>
+</html>
